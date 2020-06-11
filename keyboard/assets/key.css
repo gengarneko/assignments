@@ -1,0 +1,126 @@
+*{margin: 0;padding: 0;}
+a{text-decoration: none;}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://i.loli.net/2019/03/14/5c8a1c746d55e.png');
+}
+
+main {
+  padding: 9px;
+  background:#EEF2F4;
+  border-radius: 10px;
+  box-shadow: 0px 0px 27px 0px rgba(227, 239, 243, 0.4);
+}
+
+.wrapper {
+  border-radius: 6px;
+  background: #414550;
+}
+
+.row {
+  background: #414550;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 4px;
+  /* box-shadow: 2px 2px 2px rgba(161, 160, 160, 0.5); */
+}
+.row:first-child {
+  border-radius: 4px;
+}
+.row:last-child {
+  padding-bottom: 5px;
+  border-radius: 0 0 4px 4px;
+  margin-left: 4em;
+  margin-top: -5px;
+  width: 530px;
+}
+.row:nth-child(2) {
+  margin-left: 2em;
+  margin-top: -5px;
+  width: 680px;
+}
+
+.key {
+  padding: 4px 12px 14px 12px;
+  display: inline-flex;
+  border-radius: 4px;
+  margin-left: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.key:last-child {
+  margin-right: 5px;
+}
+.key:active {
+  transition: .1s;
+  transform: translateY(2px);
+}
+
+.key .keyInner {
+  height: 52px;
+  width: 46px;
+  border-radius: 4px;
+  border: 1px solid #93A5AE;
+  background: #758B95;
+  padding: 7px 10px;
+  box-sizing: border-box;
+  display: inline-flex;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  background: linear-gradient(to top, silver, whitesmoke);
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.keyInner > button {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  height: 14px;
+  width: 14px;
+  font-size: 8px;
+  line-height: 1.0;
+  /* border-radius: 5px; */
+  visibility: hidden;
+}
+.keyInner:hover > button {
+  /* cursor: pointer; */
+  transition: .4s;
+  transform: translateY(1px);
+  visibility: visible;
+}
+.keyInner img {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 4px;
+  bottom: 2px;
+}
+
+/* 各种颜色 */
+.row:nth-child(1) .key {
+  background: #60727B;
+}
+.row:nth-child(2) .key {
+  background: #7F9098;
+}
+.row:nth-child(3) .key {
+  background: #94A0A7;
+}
+.row:nth-child(1) .key .keyInner {
+  background: #758B95;
+  border: 1px solid #93A5AE;
+}
+.row:nth-child(2) .key .keyInner {
+  background: #99ADB8;
+  border: 1px solid #B2C3CB;
+}
+.row:nth-child(3) .key .keyInner {
+  background: #B2C1C8;
+  border: 1px solid #C7D3DA;
+}
